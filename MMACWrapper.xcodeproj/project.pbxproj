@@ -12,7 +12,7 @@
 		285CD3ED1DA0DB5000F68958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285CD3EC1DA0DB5000F68958 /* ViewController.m */; };
 		285CD3F21DA0DB5000F68958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285CD3F11DA0DB5000F68958 /* Assets.xcassets */; };
 		285CD3F51DA0DB5000F68958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285CD3F31DA0DB5000F68958 /* LaunchScreen.storyboard */; };
-		285CD3FF1DA0DCD700F68958 /* MMACWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 285CD3FE1DA0DCD700F68958 /* MMACWrapper.m */; };
+		28B80A861DA645FF00AD6030 /* MMACWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B80A851DA645FF00AD6030 /* MMACWrapper.m */; };
 		3BBE70A87DF5D7DD111A2A98 /* libPods-MMACWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F502E17B4871C2693138CBBB /* libPods-MMACWrapper.a */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +26,8 @@
 		285CD3F11DA0DB5000F68958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		285CD3F41DA0DB5000F68958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		285CD3F61DA0DB5000F68958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		285CD3FD1DA0DCD700F68958 /* MMACWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMACWrapper.h; sourceTree = "<group>"; };
-		285CD3FE1DA0DCD700F68958 /* MMACWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMACWrapper.m; sourceTree = "<group>"; };
+		28B80A841DA645FF00AD6030 /* MMACWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMACWrapper.h; sourceTree = "<group>"; };
+		28B80A851DA645FF00AD6030 /* MMACWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMACWrapper.m; sourceTree = "<group>"; };
 		41F7BD1933356DBFCF8A03E3 /* Pods-MMACWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMACWrapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMACWrapper/Pods-MMACWrapper.debug.xcconfig"; sourceTree = "<group>"; };
 		87AC15CCF541CE4F906ADB24 /* Pods-MMACWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMACWrapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMACWrapper/Pods-MMACWrapper.release.xcconfig"; sourceTree = "<group>"; };
 		F502E17B4871C2693138CBBB /* libPods-MMACWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMACWrapper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +74,7 @@
 		285CD3E41DA0DB5000F68958 /* MMACWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				285CD3FC1DA0DB8F00F68958 /* MMACWrapper */,
+				28B80A831DA645FF00AD6030 /* MMACWrapper */,
 				285CD3E81DA0DB5000F68958 /* AppDelegate.h */,
 				285CD3E91DA0DB5000F68958 /* AppDelegate.m */,
 				285CD3EB1DA0DB5000F68958 /* ViewController.h */,
@@ -95,13 +95,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		285CD3FC1DA0DB8F00F68958 /* MMACWrapper */ = {
+		28B80A831DA645FF00AD6030 /* MMACWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				285CD3FD1DA0DCD700F68958 /* MMACWrapper.h */,
-				285CD3FE1DA0DCD700F68958 /* MMACWrapper.m */,
+				28B80A841DA645FF00AD6030 /* MMACWrapper.h */,
+				28B80A851DA645FF00AD6030 /* MMACWrapper.m */,
 			);
-			name = MMACWrapper;
+			path = MMACWrapper;
 			sourceTree = "<group>";
 		};
 		6938022076F2DAC139DB6FA8 /* Pods */ = {
@@ -236,9 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				285CD3ED1DA0DB5000F68958 /* ViewController.m in Sources */,
-				285CD3FF1DA0DCD700F68958 /* MMACWrapper.m in Sources */,
 				285CD3EA1DA0DB5000F68958 /* AppDelegate.m in Sources */,
 				285CD3E71DA0DB5000F68958 /* main.m in Sources */,
+				28B80A861DA645FF00AD6030 /* MMACWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
