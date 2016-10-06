@@ -9,8 +9,8 @@
 #import "ViewController.h"
 #import "MMACWrapper.h"
 
-static NSString * kSocketURLString = @"ws://www.magnet-magic.com:3002/ac_wrapper_test_channel/";
-static NSString * kSocketChannelName = @"AcWrapperTest2Channel";
+static NSString * kSocketURLString = @"ws://192.168.1.247:3002/ac_wrapper_test_channel/";
+static NSString * kSocketChannelName = @"AcWrapperTestChannel";
 
 @interface SubscriptionObject : NSObject
 @property MMACSubscription *subscription;
