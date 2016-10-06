@@ -10,9 +10,10 @@
 		285CD3E71DA0DB5000F68958 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 285CD3E61DA0DB5000F68958 /* main.m */; };
 		285CD3EA1DA0DB5000F68958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 285CD3E91DA0DB5000F68958 /* AppDelegate.m */; };
 		285CD3ED1DA0DB5000F68958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285CD3EC1DA0DB5000F68958 /* ViewController.m */; };
-		285CD3F01DA0DB5000F68958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285CD3EE1DA0DB5000F68958 /* Main.storyboard */; };
 		285CD3F21DA0DB5000F68958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285CD3F11DA0DB5000F68958 /* Assets.xcassets */; };
 		285CD3F51DA0DB5000F68958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285CD3F31DA0DB5000F68958 /* LaunchScreen.storyboard */; };
+		285CD3FF1DA0DCD700F68958 /* MMACWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 285CD3FE1DA0DCD700F68958 /* MMACWrapper.m */; };
+		3BBE70A87DF5D7DD111A2A98 /* libPods-MMACWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F502E17B4871C2693138CBBB /* libPods-MMACWrapper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +23,14 @@
 		285CD3E91DA0DB5000F68958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		285CD3EB1DA0DB5000F68958 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		285CD3EC1DA0DB5000F68958 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		285CD3EF1DA0DB5000F68958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		285CD3F11DA0DB5000F68958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		285CD3F41DA0DB5000F68958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		285CD3F61DA0DB5000F68958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285CD3FD1DA0DCD700F68958 /* MMACWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMACWrapper.h; sourceTree = "<group>"; };
+		285CD3FE1DA0DCD700F68958 /* MMACWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMACWrapper.m; sourceTree = "<group>"; };
+		41F7BD1933356DBFCF8A03E3 /* Pods-MMACWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMACWrapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMACWrapper/Pods-MMACWrapper.debug.xcconfig"; sourceTree = "<group>"; };
+		87AC15CCF541CE4F906ADB24 /* Pods-MMACWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMACWrapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMACWrapper/Pods-MMACWrapper.release.xcconfig"; sourceTree = "<group>"; };
+		F502E17B4871C2693138CBBB /* libPods-MMACWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MMACWrapper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBE70A87DF5D7DD111A2A98 /* libPods-MMACWrapper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A5BDB7946DB353EAEF3E52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F502E17B4871C2693138CBBB /* libPods-MMACWrapper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		285CD3D91DA0DB4F00F68958 = {
 			isa = PBXGroup;
 			children = (
 				285CD3E41DA0DB5000F68958 /* MMACWrapper */,
 				285CD3E31DA0DB5000F68958 /* Products */,
+				6938022076F2DAC139DB6FA8 /* Pods */,
+				09A5BDB7946DB353EAEF3E52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +74,11 @@
 		285CD3E41DA0DB5000F68958 /* MMACWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				285CD3FC1DA0DB8F00F68958 /* MMACWrapper */,
 				285CD3E81DA0DB5000F68958 /* AppDelegate.h */,
 				285CD3E91DA0DB5000F68958 /* AppDelegate.m */,
 				285CD3EB1DA0DB5000F68958 /* ViewController.h */,
 				285CD3EC1DA0DB5000F68958 /* ViewController.m */,
-				285CD3EE1DA0DB5000F68958 /* Main.storyboard */,
 				285CD3F11DA0DB5000F68958 /* Assets.xcassets */,
 				285CD3F31DA0DB5000F68958 /* LaunchScreen.storyboard */,
 				285CD3F61DA0DB5000F68958 /* Info.plist */,
@@ -79,6 +95,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		285CD3FC1DA0DB8F00F68958 /* MMACWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				285CD3FD1DA0DCD700F68958 /* MMACWrapper.h */,
+				285CD3FE1DA0DCD700F68958 /* MMACWrapper.m */,
+			);
+			name = MMACWrapper;
+			sourceTree = "<group>";
+		};
+		6938022076F2DAC139DB6FA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41F7BD1933356DBFCF8A03E3 /* Pods-MMACWrapper.debug.xcconfig */,
+				87AC15CCF541CE4F906ADB24 /* Pods-MMACWrapper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 285CD3F91DA0DB5000F68958 /* Build configuration list for PBXNativeTarget "MMACWrapper" */;
 			buildPhases = (
+				FF72E72D1414AAA8E3EE3244 /* [CP] Check Pods Manifest.lock */,
 				285CD3DE1DA0DB4F00F68958 /* Sources */,
 				285CD3DF1DA0DB4F00F68958 /* Frameworks */,
 				285CD3E01DA0DB4F00F68958 /* Resources */,
+				5D8A0A08CE16B52E42E2E3FC /* [CP] Embed Pods Frameworks */,
+				EF27F27F7FA55D815C1CB41D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +147,7 @@
 				TargetAttributes = {
 					285CD3E11DA0DB4F00F68958 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K8TBV3VF2T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,11 +177,58 @@
 			files = (
 				285CD3F51DA0DB5000F68958 /* LaunchScreen.storyboard in Resources */,
 				285CD3F21DA0DB5000F68958 /* Assets.xcassets in Resources */,
-				285CD3F01DA0DB5000F68958 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D8A0A08CE16B52E42E2E3FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMACWrapper/Pods-MMACWrapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF27F27F7FA55D815C1CB41D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMACWrapper/Pods-MMACWrapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF72E72D1414AAA8E3EE3244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		285CD3DE1DA0DB4F00F68958 /* Sources */ = {
@@ -151,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				285CD3ED1DA0DB5000F68958 /* ViewController.m in Sources */,
+				285CD3FF1DA0DCD700F68958 /* MMACWrapper.m in Sources */,
 				285CD3EA1DA0DB5000F68958 /* AppDelegate.m in Sources */,
 				285CD3E71DA0DB5000F68958 /* main.m in Sources */,
 			);
@@ -159,14 +245,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		285CD3EE1DA0DB5000F68958 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				285CD3EF1DA0DB5000F68958 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		285CD3F31DA0DB5000F68958 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -196,6 +274,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -243,6 +322,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -268,8 +348,10 @@
 		};
 		285CD3FA1DA0DB5000F68958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F7BD1933356DBFCF8A03E3 /* Pods-MMACWrapper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K8TBV3VF2T;
 				INFOPLIST_FILE = MMACWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.magnet-magic.MMACWrapper";
@@ -279,8 +361,10 @@
 		};
 		285CD3FB1DA0DB5000F68958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87AC15CCF541CE4F906ADB24 /* Pods-MMACWrapper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K8TBV3VF2T;
 				INFOPLIST_FILE = MMACWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.magnet-magic.MMACWrapper";
@@ -307,6 +391,7 @@
 				285CD3FB1DA0DB5000F68958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
